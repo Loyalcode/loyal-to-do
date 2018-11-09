@@ -1,0 +1,129 @@
+html,
+body {
+  height: 100%; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+* {
+  box-sizing: border-box; }
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }
+
+.wrapper {
+  align-items: center;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  height: 100%; }
+
+.app {
+  box-shadow: 0 0 1px 0 black;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+  background-color:#4286f4;
+  padding: 8px 16px;
+}
+.app__title {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+  .app__info {
+    display: flex;
+    padding-bottom:10px;
+}
+    .app__info-item {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      flex: 1; 
+}
+  .app__task-new {
+    border: 0;
+    line-height: 40px;
+    min-height: 40px;
+    padding: 0 8px;
+    width: 100%;
+    background-color: #555;
+}
+    .addbutton {
+    border: 1px solid #222;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 0 8px;
+    margin:5px 0;
+    width: 100%;
+    background:#051630;
+    color:#fff;
+    transition: background 0.3s;
+}
+    .addbutton:hover {
+    background:#0a4299;
+}
+.unf-tasks {
+    background: #8fc579;
+    min-height:50px;
+    padding: 10px 5px;
+}
+.f-tasks {
+    background: #453;
+    min-height: 50px;
+    padding: 10px 5px;
+}
+label {
+    width:80%;
+    display:inline-block;
+    text-align: left;
+}
+button.delete,button.edit,button.checkbox,button.save{
+    background: none;
+    border:none;
+    outline:none;
+}
+button.delete:hover,button.edit:hover,button.checkbox:hover,button.save:hover {
+    color:#f46242;
+}
+.unf-tasks p,.f-tasks p {
+    margin:0;
+}
+.unf-tasks p:after, .f-tasks p:after {
+    content:"";
+    display:block;
+    max-width: 200px;
+    height: 1px;
+    background: #222;
+    margin-bottom:10px;
+}
+.progr {
+    width: 50%;
+    height:5px;
+    border:1px solid #222;
+    margin:0 auto;
+    margin-bottom:10px;
+}
+.poloska {
+    background: #222;
+    height:3px;
+    transition: width 0.5s ease-out 0.05s;
+}
+#sound {
+    display: none;
+}
+ul li {
+    display:flex;
+}
+ul button {
+    align-self:center;
+}
+li.editMode label {
+    background:#fff;
+}
+/*# sourceMappingURL=styles.css.map */

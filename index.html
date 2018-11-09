@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="styles.css">
+	<title>Document</title>
+</head>
+<body>
+<div class="wrapper">
+	<div class="app">
+		<div class="app__header">
+			<div class="app__title"><span class="app__title-text">To Do List</span></div>
+			<div class="app__info">
+                <div class="app__info-item">
+					<span class="app__info-text">Выполнено задач</span>
+					<span class="app__info-number" id="js-done-tasks">0</span>
+				</div>
+				<div class="app__info-item">
+					<span class="app__info-text">Всего задач</span>
+					<span class="app__info-number" id="js-all-tasks">0</span>
+				</div>
+			</div>
+            <div class="progr">
+                <div class="poloska" id="poloska"></div>
+            </div>
+			<div class="app__footer">
+			    <input class="app__task-new" id="app__task-new" placeholder="Add new task">
+			    <button class="addbutton" id="addbutton">Добавить задачу</button>
+		    </div>
+		</div>
+		<div class="app__body">
+			<ul class="unf-tasks" id="unf-tasks">
+                <!--<p>Добавленные задачи:</p>-->
+            </ul>
+			<ul class="f-tasks" id="f-tasks">
+                <!--<p>Выполненные задачи:</p>-->
+            </ul>
+		</div>
+	</div>
+</div>
+<audio id="sound1">
+    <source src="sounds/PICKUP01.mp3" type="audio/mpeg">
+</audio>
+<audio id="sound2">
+    <source src="sounds/PICKUP02.mp3" type="audio/mpeg">
+</audio>
+<script src="script.js"></script>
+</body>
+</html>
